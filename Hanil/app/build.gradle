@@ -1,0 +1,26 @@
+apply plugin: 'com.android.application'
+android {
+    compileSdkVersion 19
+    buildToolsVersion '22.0.1'
+    defaultConfig {
+        applicationId 'com.hoyalias.remote.hanil'
+        minSdkVersion 19
+        targetSdkVersion 19
+        versionCode 2
+        versionName "2.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            debuggable true
+        }
+    }
+    productFlavors {
+    }
+}
+dependencies {
+    compile files('libs/CaulySDK-3.3.21.jar')
+}

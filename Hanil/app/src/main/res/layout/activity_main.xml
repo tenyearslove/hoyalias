@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff">
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Spinner
+            android:id="@+id/spin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#EEEEEE"
+            android:layout_marginBottom="15dp"/>
+
+        <Button
+            android:id="@+id/power"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20.0dip"
+            android:onClick="clickHandler"
+            android:text="@string/power"
+            android:textSize="43.0sp" />
+
+        <Button
+            android:id="@+id/windpower"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20.0dip"
+            android:onClick="clickHandler"
+            android:text="@string/windpower"
+            android:textSize="43.0sp" />
+
+        <Button
+            android:id="@+id/timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20.0dip"
+            android:onClick="clickHandler"
+            android:text="@string/timer"
+            android:textSize="43.0sp" />
+
+        <Button
+            android:id="@+id/winddirection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20.0dip"
+            android:onClick="clickHandler"
+            android:text="@string/winddirection"
+            android:textSize="43.0sp" />
+
+        <Button
+            android:id="@+id/windtype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20.0dip"
+            android:onClick="clickHandler"
+            android:text="@string/windtype"
+            android:textSize="43.0sp" />
+    </LinearLayout>
+
+    <com.fsn.cauly.CaulyAdView xmlns:app="http://schemas.android.com/apk/res/com.hoyalias.remote.hanil"
+        android:id="@+id/xmladview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:appcode="A1cbrUXU"
+        app:effect="TopSlide"
+        app:enableDefaultBannerAd="false" />
+</RelativeLayout>

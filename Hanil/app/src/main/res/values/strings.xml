@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">한일선풍기</string>
+
+    <string name="power">전원</string>
+    <string name="windpower">바람세기</string>
+    <string name="timer">타이머</string>
+    <string name="winddirection">방향조절</string>
+    <string name="windtype">자연풍/수면풍</string>
+    <string name="baby">아기바람</string>
+    <string name="common">일반</string>
+    <string name="error_not_supported_device">IR 리모콘을 지원하지 않는 장치 입니다.</string>
+</resources>
